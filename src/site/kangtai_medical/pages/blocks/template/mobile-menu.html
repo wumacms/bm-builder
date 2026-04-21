@@ -1,0 +1,66 @@
+<!-- 移动端侧边栏 -->
+<div id="mobileMenu" class="fixed inset-0 z-50 lg:hidden pointer-events-none">
+    <!-- 遮罩层 -->
+    <div id="menuOverlay" class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300"></div>
+
+    <!-- 侧边栏 -->
+    <div id="menuSidebar"
+        class="absolute top-0 right-0 h-full w-80 max-w-[85vw] bg-white dark:bg-gray-900 shadow-2xl transform translate-x-full transition-transform duration-300 ease-out overflow-y-auto">
+        <div class="p-6">
+            <!-- 关闭按钮 -->
+            <div class="flex items-center justify-between mb-8">
+                <div class="flex items-center space-x-3">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center">
+                        <i class="{{brand.logoIcon}} text-white"></i>
+                    </div>
+                    <span class="text-lg font-bold text-primary-600 dark:text-primary-400">{{brand.name}}</span>
+                </div>
+                <button id="menuClose"
+                    class="w-10 h-10 rounded-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-times text-gray-600 dark:text-gray-300"></i>
+                </button>
+            </div>
+
+            <!-- 菜单项 -->
+            <div class="space-y-2">
+                {{#each menuItems}}
+                {{#if submenu}}
+                <!-- 折叠菜单 -->
+                <div class="mobile-submenu">
+                    <button
+                        class="mobile-submenu-toggle w-full flex items-center justify-between px-4 py-3 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-800 transition-colors">
+                        <div class="flex items-center">
+                            <i class="{{icon}} w-6 text-primary-500"></i>
+                            <span class="ml-3 font-medium">{{text}}</span>
+                        </div>
+                        <i class="fas fa-chevron-down text-xs text-gray-400 transition-transform duration-200"></i>
+                    </button>
+                    <div class="mobile-submenu-content hidden pl-9 mt-1 space-y-1">
+                        {{#each submenu}}
+                        <a href="{{link}}"
+                            class="block px-4 py-2 rounded-lg text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">{{text}}</a>
+                        {{/each}}
+                    </div>
+                </div>
+                {{else}}
+                <!-- 普通菜单项 -->
+                <a href="{{link}}"
+                    class="mobile-menu-item flex items-center px-4 py-3 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-800 transition-colors">
+                    <i class="{{icon}} w-6 text-primary-500"></i>
+                    <span class="ml-3 font-medium">{{text}}</span>
+                </a>
+                {{/if}}
+                {{/each}}
+            </div>
+
+            <!-- 底部CTA -->
+            <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+                <a href="{{cta.link}}"
+                    class="block w-full py-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white text-center rounded-xl font-medium hover:from-primary-600 hover:to-primary-700 transition-all duration-200 shadow-lg shadow-primary-500/30">
+                    {{cta.text}}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

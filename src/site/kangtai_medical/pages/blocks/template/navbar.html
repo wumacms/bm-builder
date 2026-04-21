@@ -1,0 +1,73 @@
+<!-- 导航栏 -->
+<nav
+    class="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border-b border-gray-200/50 dark:border-gray-700/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16 lg:h-20">
+            <!-- Logo -->
+            <div class="flex items-center space-x-3">
+                <div
+                    class="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center shadow-lg shadow-primary-500/30">
+                    <i class="{{brand.logoIcon}} text-white text-lg"></i>
+                </div>
+                <span
+                    class="text-xl font-bold bg-gradient-to-r from-primary-600 to-primary-800 dark:from-primary-400 dark:to-primary-600 bg-clip-text text-transparent">{{brand.name}}</span>
+            </div>
+
+            <!-- 桌面端菜单 -->
+            <div class="hidden lg:flex items-center space-x-1">
+                {{#each menuItems}}
+                {{#if submenu}}
+                <!-- 下拉菜单 -->
+                <div class="relative group">
+                    <a href="{{link}}"
+                        class="px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-primary-50 dark:hover:bg-gray-800 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-200 font-medium flex items-center">
+                        {{text}}
+                        <i
+                            class="fas fa-chevron-down ml-1 text-xs transition-transform duration-200 group-hover:rotate-180"></i>
+                    </a>
+                    <div
+                        class="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                        <div
+                            class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl shadow-gray-200/50 dark:shadow-black/30 border border-gray-100 dark:border-gray-700 p-2 min-w-[180px]">
+                            {{#each submenu}}
+                            <a href="{{link}}"
+                                class="flex items-center px-4 py-3 rounded-xl hover:bg-primary-50 dark:hover:bg-gray-700 transition-colors duration-200">
+                                <i class="{{icon}} w-5 text-primary-500"></i>
+                                <span class="ml-3">{{text}}</span>
+                            </a>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+                {{else}}
+                <!-- 普通链接 -->
+                <a href="{{link}}"
+                    class="px-4 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-primary-50 dark:hover:bg-gray-800 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-200 font-medium">{{text}}</a>
+                {{/if}}
+                {{/each}}
+            </div>
+
+            <!-- 右侧操作区 -->
+            <div class="flex items-center space-x-3">
+                <!-- 主题切换 -->
+                <button id="themeToggle"
+                    class="w-10 h-10 rounded-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200">
+                    <!-- 太阳：白天显示，黑夜隐藏 -->
+                    <span class="flex dark:hidden">
+                        <i class="fas fa-sun text-amber-500"></i>
+                    </span>
+                    <!-- 月亮：白天隐藏，黑夜显示 -->
+                    <span class="hidden dark:flex">
+                        <i class="fas fa-moon text-primary-400"></i>
+                    </span>
+                </button>
+
+                <!-- 移动端菜单按钮 -->
+                <button id="menuToggle"
+                    class="lg:hidden w-10 h-10 rounded-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200">
+                    <i class="fas fa-bars text-gray-600 dark:text-gray-300"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>

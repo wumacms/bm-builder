@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import KangtaiMedical from './components/KangtaiMedical.vue';
 </script>
 
 <template>
-  <HelloWorld />
+  <KangtaiMedical />
 </template>

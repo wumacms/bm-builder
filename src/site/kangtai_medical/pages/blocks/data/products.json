@@ -1,0 +1,41 @@
+{
+    "id": "7993f58f0c034d1c8b0be04cf7621987",
+    "template": "products",
+    "badge": {
+        "icon": "fas fa-cubes",
+        "text": "产品中心"
+    },
+    "title": "全方位医疗智能化解决方案",
+    "description": "从影像传输到临床协作，我们提供一站式智能医疗平台",
+    "items": [
+        {
+            "image": "https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+            "tag": "核心产品",
+            "tagClass": "bg-primary-100 dark:bg-primary-900/50 text-primary-600 dark:text-primary-400",
+            "version": "v3.0",
+            "title": "影像传输系统",
+            "description": "支持DICOM标准的高速影像传输，实现跨科室、跨医院的实时影像共享与协作诊断。",
+            "link": "#"
+        },
+        {
+            "itemId": "workflow",
+            "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+            "tag": "热门推荐",
+            "tagClass": "bg-cyan-100 dark:bg-cyan-900/50 text-cyan-600 dark:text-cyan-400",
+            "version": "v2.5",
+            "title": "临床工作流引擎",
+            "description": "智能化临床流程管理，从接诊到诊断全流程数字化，提升医疗效率与质量。",
+            "link": "#"
+        },
+        {
+            "itemId": "collaboration",
+            "image": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+            "tag": "协作工具",
+            "tagClass": "bg-purple-100 dark:bg-purple-900/50 text-purple-600 dark:text-purple-400",
+            "version": "v2.0",
+            "title": "智能协作平台",
+            "description": "打破信息孤岛，实现多科室、多机构间的高效协作与资源共享。",
+            "link": "#"
+        }
+    ]
+}

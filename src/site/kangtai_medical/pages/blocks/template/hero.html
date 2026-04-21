@@ -1,0 +1,63 @@
+<!-- 首页 Hero -->
+<section id="{{id}}" class="pt-20 lg:pt-24 min-h-screen flex items-center relative overflow-hidden">
+    <!-- 背景图片 -->
+    <div class="absolute inset-0 z-0">
+        <img src="{{background.src}}"
+            alt="{{background.alt}}" class="w-full h-full object-cover">
+        <div
+            class="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/80 dark:from-gray-900 dark:via-gray-900/95 dark:to-gray-900/80">
+        </div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <!-- 左侧内容 -->
+            <div class="text-center lg:text-left">
+                <div
+                    class="inline-flex items-center px-4 py-2 bg-primary-100 dark:bg-primary-900/50 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium mb-6">
+                    <i class="{{badge.icon}} mr-2"></i>
+                    {{badge.text}}
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    <span class="text-gray-900 dark:text-white">{{title.line1}}</span>
+                    <br>
+                    <span
+                        class="bg-gradient-to-r from-primary-500 to-cyan-500 bg-clip-text text-transparent">{{title.line2}}</span>
+                </h1>
+
+                <p class="text-lg lg:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-xl mx-auto lg:mx-0">
+                    {{description}}
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    {{#each buttons}}
+                    <a href="{{link}}"
+                        class="inline-flex items-center justify-center px-8 py-4 rounded-2xl font-semibold transition-all duration-200 {{class}}">
+                        <i class="{{icon}} mr-2"></i>
+                        {{text}}
+                    </a>
+                    {{/each}}
+                </div>
+
+                <!-- 统计数据 -->
+                <div class="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+                    {{#each stats}}
+                    <div class="text-center lg:text-left">
+                        <div class="text-3xl lg:text-4xl font-bold text-primary-600 dark:text-primary-400">{{value}}</div>
+                        <div class="text-sm text-gray-500 dark:text-gray-400 mt-1">{{label}}</div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+
+            <!-- 右侧图片 -->
+            <div class="relative hidden lg:block">
+                <div class="relative">
+                    <img src="{{image.src}}"
+                        alt="{{image.alt}}" class="rounded-3xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

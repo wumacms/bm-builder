@@ -1,0 +1,554 @@
+[
+    {
+        "id": "550e8400e29b41d4a716446655440000",
+        "name": "首页",
+        "path": "/index",
+        "siteId": "6ba7b8109dad11d180b400c04fd430c8",
+        "blocks": [
+            {
+                "id": "45d7fc8bf845461eb4a006a66c2aac16",
+                "template": "hero",
+                "background": {
+                    "src": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+                    "alt": "Medical Technology Background"
+                },
+                "badge": {
+                    "icon": "fas fa-rocket",
+                    "text": "引领医疗数字化转型"
+                },
+                "title": {
+                    "line1": "专为现代医疗机构打造的",
+                    "line2": "智能协作平台"
+                },
+                "description": "集成影像传输与临床工作流，助力医疗机构实现高效协作、精准诊疗，推动医疗服务智能化升级。",
+                "buttons": [
+                    {
+                        "text": "了解产品",
+                        "link": "#products",
+                        "icon": "fas fa-play-circle",
+                        "class": "bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-xl shadow-primary-500/30 hover:shadow-2xl hover:shadow-primary-500/40 hover:-translate-y-0.5"
+                    },
+                    {
+                        "text": "联系我们",
+                        "link": "#contact",
+                        "icon": "fas fa-phone-alt",
+                        "class": "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 border-2 border-gray-200 dark:border-gray-700 hover:border-primary-500 dark:hover:border-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                    }
+                ],
+                "stats": [
+                    {
+                        "value": "500+",
+                        "label": "合作医院"
+                    },
+                    {
+                        "value": "10万+",
+                        "label": "日处理影像"
+                    },
+                    {
+                        "value": "99.9%",
+                        "label": "系统稳定性"
+                    }
+                ],
+                "image": {
+                    "src": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    "alt": "Doctor using tablet"
+                }
+            },
+            {
+                "id": "977f5646394341d688a199993d8d29ee",
+                "template": "services",
+                "badge": {
+                    "icon": "fas fa-globe",
+                    "text": "服务范围"
+                },
+                "title": "覆盖全国的医疗服务网络",
+                "description": "我们的服务网络遍布全国30个省市，为各级医疗机构提供及时、专业的技术支持",
+                "items": [
+                    {
+                        "icon": "fas fa-hospital",
+                        "iconClass": "text-primary-500",
+                        "title": "三甲医院",
+                        "description": "已服务200+三甲医院，助力顶级医疗机构数字化转型"
+                    },
+                    {
+                        "icon": "fas fa-clinic-medical",
+                        "iconClass": "text-cyan-500",
+                        "title": "基层医疗",
+                        "description": "覆盖1500+社区卫生服务中心，推动分级诊疗落地"
+                    },
+                    {
+                        "icon": "fas fa-x-ray",
+                        "iconClass": "text-purple-500",
+                        "title": "影像中心",
+                        "description": "与300+独立影像中心合作，实现跨机构影像共享"
+                    },
+                    {
+                        "icon": "fas fa-ambulance",
+                        "iconClass": "text-red-500",
+                        "title": "急救中心",
+                        "description": "为100+急救中心提供实时影像传输解决方案"
+                    }
+                ]
+            },
+            {
+                "id": "0a40dadd90324e238f0690954f925e97",
+                "template": "about",
+                "image": {
+                    "src": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+                    "alt": "Team Meeting"
+                },
+                "badge": {
+                    "icon": "fas fa-building",
+                    "text": "关于我们"
+                },
+                "title": "引领医疗信息化新时代",
+                "description": "康泰医疗成立于2012年，是国内领先的医疗信息化解决方案提供商。我们致力于通过技术创新，为医疗机构提供智能化、一体化的协作平台，让医疗服务更高效、更精准。",
+                "items": [
+                    {
+                        "icon": "fas fa-bullseye",
+                        "iconBg": "bg-primary-100 dark:bg-primary-900/50",
+                        "iconColor": "text-primary-500",
+                        "title": "企业愿景",
+                        "description": "成为中国领先的医疗信息化解决方案提供商"
+                    },
+                    {
+                        "icon": "fas fa-gem",
+                        "iconBg": "bg-cyan-100 dark:bg-cyan-900/50",
+                        "iconColor": "text-cyan-500",
+                        "title": "核心价值观",
+                        "description": "创新驱动、用户至上、安全可靠、合作共赢"
+                    }
+                ]
+            },
+            {
+                "id": "7993f58f0c034d1c8b0be04cf7621987",
+                "template": "products",
+                "badge": {
+                    "icon": "fas fa-cubes",
+                    "text": "产品中心"
+                },
+                "title": "全方位医疗智能化解决方案",
+                "description": "从影像传输到临床协作，我们提供一站式智能医疗平台",
+                "items": [
+                    {
+                        "image": "https://images.unsplash.com/photo-1581595220892-b0739db3ba8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                        "tag": "核心产品",
+                        "tagClass": "bg-primary-100 dark:bg-primary-900/50 text-primary-600 dark:text-primary-400",
+                        "version": "v3.0",
+                        "title": "影像传输系统",
+                        "description": "支持DICOM标准的高速影像传输，实现跨科室、跨医院的实时影像共享与协作诊断。",
+                        "link": "#"
+                    },
+                    {
+                        "itemId": "workflow",
+                        "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                        "tag": "热门推荐",
+                        "tagClass": "bg-cyan-100 dark:bg-cyan-900/50 text-cyan-600 dark:text-cyan-400",
+                        "version": "v2.5",
+                        "title": "临床工作流引擎",
+                        "description": "智能化临床流程管理，从接诊到诊断全流程数字化，提升医疗效率与质量。",
+                        "link": "#"
+                    },
+                    {
+                        "itemId": "collaboration",
+                        "image": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                        "tag": "协作工具",
+                        "tagClass": "bg-purple-100 dark:bg-purple-900/50 text-purple-600 dark:text-purple-400",
+                        "version": "v2.0",
+                        "title": "智能协作平台",
+                        "description": "打破信息孤岛，实现多科室、多机构间的高效协作与资源共享。",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "id": "788b90f3ff8b48a3973238bb7d07352a",
+                "template": "team",
+                "badge": {
+                    "icon": "fas fa-users",
+                    "text": "核心团队"
+                },
+                "title": "专业的团队，卓越的服务",
+                "members": [
+                    {
+                        "name": "李明华",
+                        "role": "创始人 & CEO",
+                        "roleClass": "text-primary-600 dark:text-primary-400",
+                        "experience": "20年医疗信息化经验",
+                        "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+                        "social": [
+                            {
+                                "icon": "fab fa-linkedin-in",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "fas fa-envelope",
+                                "link": "#"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "王志强",
+                        "role": "CTO",
+                        "roleClass": "text-cyan-600 dark:text-cyan-400",
+                        "experience": "前阿里云架构师",
+                        "image": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+                        "social": [
+                            {
+                                "icon": "fab fa-linkedin-in",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "fas fa-envelope",
+                                "link": "#"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "陈雅琳",
+                        "role": "医学顾问",
+                        "roleClass": "text-purple-600 dark:text-purple-400",
+                        "experience": "医学博士，10年临床经验",
+                        "image": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+                        "social": [
+                            {
+                                "icon": "fab fa-linkedin-in",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "fas fa-envelope",
+                                "link": "#"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "赵晓峰",
+                        "role": "服务总监",
+                        "roleClass": "text-amber-600 dark:text-amber-400",
+                        "experience": "15年客户服务经验",
+                        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+                        "social": [
+                            {
+                                "icon": "fab fa-linkedin-in",
+                                "link": "#"
+                            },
+                            {
+                                "icon": "fas fa-envelope",
+                                "link": "#"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "1dce2d41c12c4bd490ff75dc9e6bcbfe",
+                "template": "culture",
+                "badge": {
+                    "icon": "fas fa-landmark",
+                    "text": "企业文化"
+                },
+                "title": "我们的文化基因",
+                "items": [
+                    {
+                        "icon": "fas fa-lightbulb",
+                        "iconColor": "text-primary-500",
+                        "gradient": "from-primary-50 to-cyan-50 dark:from-primary-900/30 dark:to-cyan-900/30",
+                        "title": "持续创新",
+                        "description": "拥抱变化，不断探索医疗信息化的新可能，为行业带来突破性的解决方案。"
+                    },
+                    {
+                        "icon": "fas fa-hands-helping",
+                        "iconColor": "text-cyan-500",
+                        "gradient": "from-cyan-50 to-blue-50 dark:from-cyan-900/30 dark:to-blue-900/30",
+                        "title": "用户至上",
+                        "description": "深入理解医疗机构需求，以用户体验为核心，打造真正解决问题的产品。"
+                    },
+                    {
+                        "icon": "fas fa-shield-alt",
+                        "iconColor": "text-purple-500",
+                        "gradient": "from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30",
+                        "title": "安全可靠",
+                        "description": "医疗数据安全是我们的生命线，采用最高标准的安全措施保护患者隐私。"
+                    }
+                ]
+            },
+            {
+                "id": "652c196bae1a466d91bcbf2070c25f9c",
+                "template": "news",
+                "badge": {
+                    "icon": "fas fa-newspaper",
+                    "text": "新闻动态"
+                },
+                "title": "最新资讯",
+                "viewAll": {
+                    "text": "查看全部",
+                    "link": "#"
+                },
+                "items": [
+                    {
+                        "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                        "category": "公司新闻",
+                        "date": "2024-01-15",
+                        "title": "康泰医疗完成B轮融资，估值突破10亿元",
+                        "summary": "本轮融资由红杉资本领投，将用于产品研发和市场拓展，加速医疗信息化布局..."
+                    },
+                    {
+                        "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                        "category": "行业动态",
+                        "date": "2024-01-10",
+                        "title": "国家卫健委发布医疗信息化新标准",
+                        "summary": "新标准对医疗数据互联互通提出更高要求，康泰医疗产品已全面符合新标准..."
+                    },
+                    {
+                        "image": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                        "category": "产品发布",
+                        "date": "2024-01-05",
+                        "title": "康泰医疗发布智能协作平台3.0版本",
+                        "summary": "新版本新增AI辅助诊断功能，大幅提升医生工作效率，诊断准确率提高30%..."
+                    }
+                ]
+            },
+            {
+                "id": "c214ef69c9d941e8a90916915207ffcb",
+                "template": "pricing",
+                "badge": {
+                    "icon": "fas fa-tags",
+                    "text": "价格方案"
+                },
+                "title": "灵活的定价方案",
+                "description": "根据您的机构规模 and 需求，选择最适合的解决方案",
+                "plans": [
+                    {
+                        "name": "基础版",
+                        "description": "适合中小型医疗机构",
+                        "price": "¥9,999",
+                        "period": "/年",
+                        "features": [
+                            {
+                                "text": "影像传输基础功能",
+                                "included": true
+                            },
+                            {
+                                "text": "5个用户账号",
+                                "included": true
+                            },
+                            {
+                                "text": "10GB 云存储空间",
+                                "included": true
+                            },
+                            {
+                                "text": "工作日技术支持",
+                                "included": true
+                            },
+                            {
+                                "text": "AI辅助诊断",
+                                "included": false
+                            }
+                        ],
+                        "buttonText": "选择方案",
+                        "planClass": "bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700",
+                        "nameClass": "text-gray-900 dark:text-white",
+                        "descClass": "text-gray-500 dark:text-gray-400",
+                        "priceClass": "text-gray-900 dark:text-white",
+                        "periodClass": "text-gray-500 dark:text-gray-400",
+                        "featureTextClass": "text-gray-600 dark:text-gray-400",
+                        "checkIconClass": "text-green-500",
+                        "timesIconClass": "text-gray-300 dark:text-gray-600",
+                        "buttonClass": "border-2 border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-primary-500 hover:text-primary-600 dark:hover:text-primary-400",
+                        "highlight": false
+                    },
+                    {
+                        "name": "专业版",
+                        "description": "适合大型医疗机构",
+                        "price": "¥29,999",
+                        "period": "/年",
+                        "badge": "最受欢迎",
+                        "features": [
+                            {
+                                "text": "全部基础版功能",
+                                "included": true
+                            },
+                            {
+                                "text": "50个用户账号",
+                                "included": true
+                            },
+                            {
+                                "text": "100GB 云存储空间",
+                                "included": true
+                            },
+                            {
+                                "text": "7x24小时技术支持",
+                                "included": true
+                            },
+                            {
+                                "text": "AI辅助诊断模块",
+                                "included": true
+                            }
+                        ],
+                        "buttonText": "选择方案",
+                        "planClass": "bg-gradient-to-b from-primary-500 to-primary-600 shadow-2xl shadow-primary-500/30 relative transform scale-105",
+                        "nameClass": "text-white",
+                        "descClass": "text-primary-100",
+                        "priceClass": "text-white",
+                        "periodClass": "text-primary-100",
+                        "featureTextClass": "text-white",
+                        "checkIconClass": "text-primary-200",
+                        "buttonClass": "bg-white text-primary-600 hover:bg-gray-100",
+                        "highlight": true
+                    },
+                    {
+                        "name": "企业版",
+                        "description": "适合医疗集团/连锁机构",
+                        "price": "定制",
+                        "features": [
+                            {
+                                "text": "全部专业版功能",
+                                "included": true
+                            },
+                            {
+                                "text": "无限用户账号",
+                                "included": true
+                            },
+                            {
+                                "text": "私有化部署支持",
+                                "included": true
+                            },
+                            {
+                                "text": "专属客户成功经理",
+                                "included": true
+                            },
+                            {
+                                "text": "定制化开发服务",
+                                "included": true
+                            }
+                        ],
+                        "buttonText": "联系销售",
+                        "planClass": "bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700",
+                        "nameClass": "text-gray-900 dark:text-white",
+                        "descClass": "text-gray-500 dark:text-gray-400",
+                        "priceClass": "text-gray-900 dark:text-white",
+                        "periodClass": "text-gray-500 dark:text-gray-400",
+                        "featureTextClass": "text-gray-600 dark:text-gray-400",
+                        "checkIconClass": "text-green-500",
+                        "buttonClass": "border-2 border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-primary-500 hover:text-primary-600 dark:hover:text-primary-400",
+                        "highlight": false
+                    }
+                ]
+            },
+            {
+                "id": "972ae210e9b945fe9355d2dfda499b91",
+                "template": "faq",
+                "badge": {
+                    "icon": "fas fa-question-circle",
+                    "text": "常见问题"
+                },
+                "title": "您可能想了解的问题",
+                "items": [
+                    {
+                        "question": "康泰医疗的产品如何保障数据安全？",
+                        "answer": "我们采用端到端加密技术，所有数据传输均使用AES-256加密标准。同时，我们的系统通过了ISO27001信息安全认证和等保三级认证，确保患者隐私数据得到最高级别的保护。"
+                    },
+                    {
+                        "question": "系统部署需要多长时间？",
+                        "answer": "云端部署通常可在1-2周内完成，私有化部署根据机构规模 and 定制需求，一般需要1-3个月。我们提供专业的实施团队全程协助，确保系统顺利上线。"
+                    },
+                    {
+                        "question": "是否支持与现有HIS/PACS系统对接？",
+                        "answer": "是的，我们的产品支持标准HL7 and DICOM接口，可与主流HIS、PACS、RIS等系统无缝对接。目前已成功对接超过50种不同厂商的医疗信息系统。"
+                    },
+                    {
+                        "question": "提供哪些培训 and 技术支持？",
+                        "answer": "我们提供全方位的培训服务，包括现场培训、在线视频教程 and 操作手册。技术支持方面，专业版及以上用户可享受7x24小时在线支持，问题响应时间不超过2小时。"
+                    }
+                ]
+            },
+            {
+                "id": "0ea914af37fb41c386f9a328ff6b889f",
+                "template": "cta",
+                "title": "准备好开启医疗智能化之旅了吗？",
+                "description": "立即联系我们，获取专属解决方案 and 免费试用机会",
+                "buttons": [
+                    {
+                        "text": "立即咨询",
+                        "link": "#contact",
+                        "icon": "fas fa-phone-alt",
+                        "class": "bg-white text-primary-600 hover:bg-gray-100 shadow-xl"
+                    },
+                    {
+                        "text": "下载产品手册",
+                        "link": "#products",
+                        "icon": "fas fa-download",
+                        "class": "bg-transparent text-white border-2 border-white/50 hover:bg-white/10"
+                    }
+                ]
+            },
+            {
+                "id": "73a963e387944f2cbc622e95eafec2c8",
+                "template": "contact",
+                "badge": {
+                    "icon": "fas fa-envelope",
+                    "text": "联系我们"
+                },
+                "title": "开启医疗智能化之旅",
+                "description": "无论您是想了解产品详情，还是寻求合作机会，我们的专业团队随时为您服务。",
+                "contactDetails": [
+                    {
+                        "label": "服务热线",
+                        "value": "400-888-9999",
+                        "icon": "fas fa-phone-alt"
+                    },
+                    {
+                        "label": "商务邮箱",
+                        "value": "contact@kangtai-medical.com",
+                        "icon": "fas fa-envelope"
+                    },
+                    {
+                        "label": "公司地址",
+                        "value": "北京市海淀区中关村科技园区8号楼",
+                        "icon": "fas fa-map-marker-alt"
+                    }
+                ],
+                "socialMedia": {
+                    "label": "关注我们",
+                    "links": [
+                        {
+                            "icon": "fab fa-weixin",
+                            "link": "#"
+                        },
+                        {
+                            "icon": "fab fa-weibo",
+                            "link": "#"
+                        },
+                        {
+                            "icon": "fab fa-linkedin-in",
+                            "link": "#"
+                        }
+                    ]
+                },
+                "form": {
+                    "title": "免费咨询",
+                    "fields": {
+                        "name": {
+                            "label": "姓名",
+                            "placeholder": "您的姓名"
+                        },
+                        "phone": {
+                            "label": "电话",
+                            "placeholder": "联系电话"
+                        },
+                        "organization": {
+                            "label": "医院/机构名称",
+                            "placeholder": "您的医疗机构名称"
+                        },
+                        "message": {
+                            "label": "咨询内容",
+                            "placeholder": "请描述您的需求..."
+                        }
+                    },
+                    "buttonText": "提交咨询",
+                    "buttonIcon": "fas fa-paper-plane"
+                }
+            }
+        ]
+    }
+]

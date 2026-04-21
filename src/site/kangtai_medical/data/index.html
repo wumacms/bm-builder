@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{website.name}}</title>
+    <style>
+        {{{globalCss}}}
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="font-sans bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition-colors duration-300">
+
+    {{#if website.navbar}}
+    {{> navbar website.navbar}}
+    {{/if}}
+
+    {{#if website.mobile-menu}}
+    {{> mobile-menu website.mobile-menu}}
+    {{/if}}
+
+    {{#each page.blocks}}
+    {{> (lookup . 'template') }}
+    {{/each}}
+
+    {{#if website.footer}}
+    {{> footer website.footer}}
+    {{/if}}
+
+    <!-- 返回顶部按钮 -->
+    <button id="backToTop"
+        class="fixed bottom-8 right-8 z-40 w-12 h-12 bg-primary-500 text-white rounded-2xl shadow-xl shadow-primary-500/30 flex items-center justify-center hover:bg-primary-600 transition-all duration-300 opacity-0 invisible translate-y-4">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // 主题切换逻辑
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+
+        // 初始化主题
+        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        }
+
+        if (themeToggle) {
+            themeToggle.addEventListener('click', () => {
+                html.classList.toggle('dark');
+                localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+            });
+        }
+
+        // 移动端菜单逻辑
+        const menuToggle = document.getElementById('menuToggle');
+        const menuClose = document.getElementById('menuClose');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuSidebar = document.getElementById('menuSidebar');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        function openMenu() {
+            if (mobileMenu) {
+                mobileMenu.classList.remove('pointer-events-none');
+                menuOverlay.classList.remove('opacity-0');
+                menuOverlay.classList.add('opacity-100');
+                menuSidebar.classList.remove('translate-x-full');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeMenu() {
+            if (mobileMenu) {
+                mobileMenu.classList.add('pointer-events-none');
+                menuOverlay.classList.add('opacity-0');
+                menuOverlay.classList.remove('opacity-100');
+                menuSidebar.classList.add('translate-x-full');
+                document.body.style.overflow = '';
+            }
+        }
+
+        if (menuToggle) menuToggle.addEventListener('click', openMenu);
+        if (menuClose) menuClose.addEventListener('click', closeMenu);
+        if (menuOverlay) menuOverlay.addEventListener('click', closeMenu);
+
+        // 移动端子菜单折叠
+        document.querySelectorAll('.mobile-submenu-toggle').forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('.fa-chevron-down');
+                if (content) content.classList.toggle('hidden');
+                if (icon) icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // 点击菜单项关闭菜单
+        document.querySelectorAll('.mobile-menu-item, .mobile-submenu-content a').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        // FAQ 手风琴
+        document.querySelectorAll('.faq-toggle').forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('.fa-chevron-down');
+
+                // 关闭其他打开的项
+                document.querySelectorAll('.faq-content').forEach(c => {
+                    if (c !== content) {
+                        c.classList.add('hidden');
+                    }
+                });
+                document.querySelectorAll('.faq-toggle .fa-chevron-down').forEach(i => {
+                    if (i !== icon) {
+                        i.classList.remove('rotate-180');
+                    }
+                });
+
+                if (content) content.classList.toggle('hidden');
+                if (icon) icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // 表单提交
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('感谢您的咨询！我们将尽快与您联系。');
+            });
+        }
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#' || !href.startsWith('#')) return;
+
+                e.preventDefault();
+                // 解决 UUID 作为 ID 时，querySelector 可能因为以数字开头而报错的问题
+                const targetId = href.substring(1);
+                const target = document.getElementById(targetId);
+                if (target) {
+                    const offset = 80;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // 返回顶部按钮逻辑
+        const backToTopBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (backToTopBtn) {
+                if (window.scrollY > 300) {
+                    backToTopBtn.classList.remove('opacity-0', 'invisible', 'translate-y-4');
+                    backToTopBtn.classList.add('opacity-100', 'visible', 'translate-y-0');
+                } else {
+                    backToTopBtn.classList.add('opacity-0', 'invisible', 'translate-y-4');
+                    backToTopBtn.classList.remove('opacity-100', 'visible', 'translate-y-0');
+                }
+            }
+        });
+
+        if (backToTopBtn) {
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+    </script>
+</body>
+
+</html>

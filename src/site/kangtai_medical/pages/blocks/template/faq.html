@@ -1,0 +1,33 @@
+<!-- 常见问题 -->
+<section id="{{id}}" class="py-20 lg:py-32 bg-gray-50 dark:bg-gray-800/50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <div
+                class="inline-flex items-center px-4 py-2 bg-primary-100 dark:bg-primary-900/50 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium mb-4">
+                <i class="{{badge.icon}} mr-2"></i>
+                {{badge.text}}
+            </div>
+            <h2 class="text-3xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+                {{title}}
+            </h2>
+        </div>
+
+        <div class="space-y-4">
+            {{#each items}}
+            <!-- FAQ Item -->
+            <div
+                class="faq-item bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden">
+                <button class="faq-toggle w-full flex items-center justify-between p-6 text-left">
+                    <span class="font-semibold text-gray-900 dark:text-white">{{question}}</span>
+                    <i class="fas fa-chevron-down text-gray-400 transition-transform duration-200"></i>
+                </button>
+                <div class="faq-content hidden px-6 pb-6">
+                    <p class="text-gray-600 dark:text-gray-400">
+                        {{answer}}
+                    </p>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>

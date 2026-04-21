@@ -1,0 +1,60 @@
+<!-- 价格方案 -->
+<section id="{{id}}" class="py-20 lg:py-32 bg-gray-50 dark:bg-gray-800/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <div
+                class="inline-flex items-center px-4 py-2 bg-primary-100 dark:bg-primary-900/50 text-primary-700 dark:text-primary-300 rounded-full text-sm font-medium mb-4">
+                <i class="{{badge.icon}} mr-2"></i>
+                {{badge.text}}
+            </div>
+            <h2 class="text-3xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+                {{title}}
+            </h2>
+            <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                {{description}}
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {{#each plans}}
+            <!-- 方案卡片 -->
+            <div
+                class="rounded-3xl p-8 transition-all duration-300 hover:shadow-xl {{planClass}}">
+                {{#if badge}}
+                <div
+                    class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-1 bg-amber-400 text-amber-900 text-xs font-bold rounded-full">
+                    {{badge}}
+                </div>
+                {{/if}}
+
+                <div class="text-center mb-8">
+                    <h3 class="text-xl font-bold mb-2 {{nameClass}}">{{name}}</h3>
+                    <p class="text-sm mb-4 {{descClass}}">{{description}}</p>
+                    <div class="flex items-baseline justify-center">
+                        <span class="text-4xl font-bold {{priceClass}}">{{price}}</span>
+                        {{#if period}}<span class="ml-2 {{periodClass}}">{{period}}</span>{{/if}}
+                    </div>
+                </div>
+
+                <ul class="space-y-4 mb-8">
+                    {{#each features}}
+                    <li class="flex items-center text-sm {{../featureTextClass}} {{#unless included}}opacity-60{{/unless}}">
+                        {{#if included}}
+                        <i class="fas fa-check mr-3 {{../checkIconClass}}"></i>
+                        {{else}}
+                        <i class="fas fa-times mr-3 {{../timesIconClass}}"></i>
+                        {{/if}}
+                        {{text}}
+                    </li>
+                    {{/each}}
+                </ul>
+
+                <button
+                    class="w-full py-3 rounded-xl font-semibold transition-colors {{buttonClass}}">
+                    {{buttonText}}
+                </button>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</section>

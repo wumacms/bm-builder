@@ -1,0 +1,36 @@
+{
+    "id": "652c196bae1a466d91bcbf2070c25f9c",
+    "template": "news",
+    "badge": {
+        "icon": "fas fa-newspaper",
+        "text": "新闻动态"
+    },
+    "title": "最新资讯",
+    "viewAll": {
+        "text": "查看全部",
+        "link": "#"
+    },
+    "items": [
+        {
+            "image": "https://images.unsplash.com/photo-1538108149393-fbbd81895907?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+            "category": "公司新闻",
+            "date": "2024-01-15",
+            "title": "康泰医疗完成B轮融资，估值突破10亿元",
+            "summary": "本轮融资由红杉资本领投，将用于产品研发和市场拓展，加速医疗信息化布局..."
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+            "category": "行业动态",
+            "date": "2024-01-10",
+            "title": "国家卫健委发布医疗信息化新标准",
+            "summary": "新标准对医疗数据互联互通提出更高要求，康泰医疗产品已全面符合新标准..."
+        },
+        {
+            "image": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+            "category": "产品发布",
+            "date": "2024-01-05",
+            "title": "康泰医疗发布智能协作平台3.0版本",
+            "summary": "新版本新增AI辅助诊断功能，大幅提升医生工作效率，诊断准确率提高30%..."
+        }
+    ]
+}

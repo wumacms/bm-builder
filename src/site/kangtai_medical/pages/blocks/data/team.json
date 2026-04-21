@@ -1,0 +1,79 @@
+{
+    "id": "788b90f3ff8b48a3973238bb7d07352a",
+    "template": "team",
+    "badge": {
+        "icon": "fas fa-users",
+        "text": "核心团队"
+    },
+    "title": "专业的团队，卓越的服务",
+    "members": [
+        {
+            "name": "李明华",
+            "role": "创始人 & CEO",
+            "roleClass": "text-primary-600 dark:text-primary-400",
+            "experience": "20年医疗信息化经验",
+            "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+            "social": [
+                {
+                    "icon": "fab fa-linkedin-in",
+                    "link": "#"
+                },
+                {
+                    "icon": "fas fa-envelope",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "name": "王志强",
+            "role": "CTO",
+            "roleClass": "text-cyan-600 dark:text-cyan-400",
+            "experience": "前阿里云架构师",
+            "image": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+            "social": [
+                {
+                    "icon": "fab fa-linkedin-in",
+                    "link": "#"
+                },
+                {
+                    "icon": "fas fa-envelope",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "name": "陈雅琳",
+            "role": "医学顾问",
+            "roleClass": "text-purple-600 dark:text-purple-400",
+            "experience": "医学博士，10年临床经验",
+            "image": "https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+            "social": [
+                {
+                    "icon": "fab fa-linkedin-in",
+                    "link": "#"
+                },
+                {
+                    "icon": "fas fa-envelope",
+                    "link": "#"
+                }
+            ]
+        },
+        {
+            "name": "赵晓峰",
+            "role": "服务总监",
+            "roleClass": "text-amber-600 dark:text-amber-400",
+            "experience": "15年客户服务经验",
+            "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+            "social": [
+                {
+                    "icon": "fab fa-linkedin-in",
+                    "link": "#"
+                },
+                {
+                    "icon": "fas fa-envelope",
+                    "link": "#"
+                }
+            ]
+        }
+    ]
+}

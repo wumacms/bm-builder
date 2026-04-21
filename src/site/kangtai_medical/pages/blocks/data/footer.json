@@ -1,0 +1,103 @@
+{
+    "id": "3f434ac02aa246859ee5bce8d1c2ad40",
+    "template": "footer",
+    "company": {
+        "name": "康泰医疗",
+        "logoIcon": "fas fa-heartbeat",
+        "description": "专为现代医疗机构打造的智能协作平台，集成影像传输与临床工作流。",
+        "social": [
+            {
+                "icon": "fab fa-weixin",
+                "link": "#"
+            },
+            {
+                "icon": "fab fa-weibo",
+                "link": "#"
+            },
+            {
+                "icon": "fab fa-linkedin-in",
+                "link": "#"
+            }
+        ]
+    },
+    "sections": [
+        {
+            "title": "快速链接",
+            "links": [
+                {
+                    "text": "首页",
+                    "link": "#home"
+                },
+                {
+                    "text": "关于我们",
+                    "link": "#about"
+                },
+                {
+                    "text": "产品服务",
+                    "link": "#products"
+                },
+                {
+                    "text": "新闻动态",
+                    "link": "#news"
+                },
+                {
+                    "text": "联系我们",
+                    "link": "#contact"
+                }
+            ]
+        },
+        {
+            "title": "产品服务",
+            "links": [
+                {
+                    "text": "影像传输系统",
+                    "link": "#products"
+                },
+                {
+                    "text": "临床工作流",
+                    "link": "#workflow"
+                },
+                {
+                    "text": "智能协作平台",
+                    "link": "#collaboration"
+                },
+                {
+                    "text": "技术支持",
+                    "link": "#"
+                }
+            ]
+        }
+    ],
+    "contact": {
+        "title": "联系我们",
+        "items": [
+            {
+                "icon": "fas fa-phone-alt",
+                "text": "400-888-9999"
+            },
+            {
+                "icon": "fas fa-envelope",
+                "text": "contact@kangtai-medical.com"
+            },
+            {
+                "icon": "fas fa-map-marker-alt",
+                "text": "北京市海淀区中关村科技园区8号楼"
+            }
+        ]
+    },
+    "copyright": "© 2024 康泰医疗科技有限公司. 保留所有权利.",
+    "footerLinks": [
+        {
+            "text": "隐私政策",
+            "link": "#"
+        },
+        {
+            "text": "服务条款",
+            "link": "#"
+        },
+        {
+            "text": "京ICP备12345678号",
+            "link": "#"
+        }
+    ]
+}

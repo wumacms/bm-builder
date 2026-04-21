@@ -1,0 +1,67 @@
+{
+    "id": "73a963e387944f2cbc622e95eafec2c8",
+    "template": "contact",
+    "badge": {
+        "icon": "fas fa-envelope",
+        "text": "联系我们"
+    },
+    "title": "开启医疗智能化之旅",
+    "description": "无论您是想了解产品详情，还是寻求合作机会，我们的专业团队随时为您服务。",
+    "contactDetails": [
+        {
+            "label": "服务热线",
+            "value": "400-888-9999",
+            "icon": "fas fa-phone-alt"
+        },
+        {
+            "label": "商务邮箱",
+            "value": "contact@kangtai-medical.com",
+            "icon": "fas fa-envelope"
+        },
+        {
+            "label": "公司地址",
+            "value": "北京市海淀区中关村科技园区8号楼",
+            "icon": "fas fa-map-marker-alt"
+        }
+    ],
+    "socialMedia": {
+        "label": "关注我们",
+        "links": [
+            {
+                "icon": "fab fa-weixin",
+                "link": "#"
+            },
+            {
+                "icon": "fab fa-weibo",
+                "link": "#"
+            },
+            {
+                "icon": "fab fa-linkedin-in",
+                "link": "#"
+            }
+        ]
+    },
+    "form": {
+        "title": "免费咨询",
+        "fields": {
+            "name": {
+                "label": "姓名",
+                "placeholder": "您的姓名"
+            },
+            "phone": {
+                "label": "电话",
+                "placeholder": "联系电话"
+            },
+            "organization": {
+                "label": "医院/机构名称",
+                "placeholder": "您的医疗机构名称"
+            },
+            "message": {
+                "label": "咨询内容",
+                "placeholder": "请描述您的需求..."
+            }
+        },
+        "buttonText": "提交咨询",
+        "buttonIcon": "fas fa-paper-plane"
+    }
+}

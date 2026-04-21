@@ -1,0 +1,127 @@
+{
+    "id": "c214ef69c9d941e8a90916915207ffcb",
+    "template": "pricing",
+    "badge": {
+        "icon": "fas fa-tags",
+        "text": "价格方案"
+    },
+    "title": "灵活的定价方案",
+    "description": "根据您的机构规模 and 需求，选择最适合的解决方案",
+    "plans": [
+        {
+            "name": "基础版",
+            "description": "适合中小型医疗机构",
+            "price": "¥9,999",
+            "period": "/年",
+            "features": [
+                {
+                    "text": "影像传输基础功能",
+                    "included": true
+                },
+                {
+                    "text": "5个用户账号",
+                    "included": true
+                },
+                {
+                    "text": "10GB 云存储空间",
+                    "included": true
+                },
+                {
+                    "text": "工作日技术支持",
+                    "included": true
+                },
+                {
+                    "text": "AI辅助诊断",
+                    "included": false
+                }
+            ],
+            "buttonText": "选择方案",
+            "planClass": "bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700",
+            "nameClass": "text-gray-900 dark:text-white",
+            "descClass": "text-gray-500 dark:text-gray-400",
+            "priceClass": "text-gray-900 dark:text-white",
+            "periodClass": "text-gray-500 dark:text-gray-400",
+            "featureTextClass": "text-gray-600 dark:text-gray-400",
+            "checkIconClass": "text-green-500",
+            "timesIconClass": "text-gray-300 dark:text-gray-600",
+            "buttonClass": "border-2 border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-primary-500 hover:text-primary-600 dark:hover:text-primary-400",
+            "highlight": false
+        },
+        {
+            "name": "专业版",
+            "description": "适合大型医疗机构",
+            "price": "¥29,999",
+            "period": "/年",
+            "badge": "最受欢迎",
+            "features": [
+                {
+                    "text": "全部基础版功能",
+                    "included": true
+                },
+                {
+                    "text": "50个用户账号",
+                    "included": true
+                },
+                {
+                    "text": "100GB 云存储空间",
+                    "included": true
+                },
+                {
+                    "text": "7x24小时技术支持",
+                    "included": true
+                },
+                {
+                    "text": "AI辅助诊断模块",
+                    "included": true
+                }
+            ],
+            "buttonText": "选择方案",
+            "planClass": "bg-gradient-to-b from-primary-500 to-primary-600 shadow-2xl shadow-primary-500/30 relative transform scale-105",
+            "nameClass": "text-white",
+            "descClass": "text-primary-100",
+            "priceClass": "text-white",
+            "periodClass": "text-primary-100",
+            "featureTextClass": "text-white",
+            "checkIconClass": "text-primary-200",
+            "buttonClass": "bg-white text-primary-600 hover:bg-gray-100",
+            "highlight": true
+        },
+        {
+            "name": "企业版",
+            "description": "适合医疗集团/连锁机构",
+            "price": "定制",
+            "features": [
+                {
+                    "text": "全部专业版功能",
+                    "included": true
+                },
+                {
+                    "text": "无限用户账号",
+                    "included": true
+                },
+                {
+                    "text": "私有化部署支持",
+                    "included": true
+                },
+                {
+                    "text": "专属客户成功经理",
+                    "included": true
+                },
+                {
+                    "text": "定制化开发服务",
+                    "included": true
+                }
+            ],
+            "buttonText": "联系销售",
+            "planClass": "bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700",
+            "nameClass": "text-gray-900 dark:text-white",
+            "descClass": "text-gray-500 dark:text-gray-400",
+            "priceClass": "text-gray-900 dark:text-white",
+            "periodClass": "text-gray-500 dark:text-gray-400",
+            "featureTextClass": "text-gray-600 dark:text-gray-400",
+            "checkIconClass": "text-green-500",
+            "buttonClass": "border-2 border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-primary-500 hover:text-primary-600 dark:hover:text-primary-400",
+            "highlight": false
+        }
+    ]
+}

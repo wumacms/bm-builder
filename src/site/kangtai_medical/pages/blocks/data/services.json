@@ -1,0 +1,36 @@
+{
+    "id": "977f5646394341d688a199993d8d29ee",
+    "template": "services",
+    "badge": {
+        "icon": "fas fa-globe",
+        "text": "服务范围"
+    },
+    "title": "覆盖全国的医疗服务网络",
+    "description": "我们的服务网络遍布全国30个省市，为各级医疗机构提供及时、专业的技术支持",
+    "items": [
+        {
+            "icon": "fas fa-hospital",
+            "iconClass": "text-primary-500",
+            "title": "三甲医院",
+            "description": "已服务200+三甲医院，助力顶级医疗机构数字化转型"
+        },
+        {
+            "icon": "fas fa-clinic-medical",
+            "iconClass": "text-cyan-500",
+            "title": "基层医疗",
+            "description": "覆盖1500+社区卫生服务中心，推动分级诊疗落地"
+        },
+        {
+            "icon": "fas fa-x-ray",
+            "iconClass": "text-purple-500",
+            "title": "影像中心",
+            "description": "与300+独立影像中心合作，实现跨机构影像共享"
+        },
+        {
+            "icon": "fas fa-ambulance",
+            "iconClass": "text-red-500",
+            "title": "急救中心",
+            "description": "为100+急救中心提供实时影像传输解决方案"
+        }
+    ]
+}

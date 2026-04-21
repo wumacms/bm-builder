@@ -1,0 +1,30 @@
+{
+    "id": "0a40dadd90324e238f0690954f925e97",
+    "template": "about",
+    "image": {
+        "src": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "alt": "Team Meeting"
+    },
+    "badge": {
+        "icon": "fas fa-building",
+        "text": "关于我们"
+    },
+    "title": "引领医疗信息化新时代",
+    "description": "康泰医疗成立于2012年，是国内领先的医疗信息化解决方案提供商。我们致力于通过技术创新，为医疗机构提供智能化、一体化的协作平台，让医疗服务更高效、更精准。",
+    "items": [
+        {
+            "icon": "fas fa-bullseye",
+            "iconBg": "bg-primary-100 dark:bg-primary-900/50",
+            "iconColor": "text-primary-500",
+            "title": "企业愿景",
+            "description": "成为中国领先的医疗信息化解决方案提供商"
+        },
+        {
+            "icon": "fas fa-gem",
+            "iconBg": "bg-cyan-100 dark:bg-cyan-900/50",
+            "iconColor": "text-cyan-500",
+            "title": "核心价值观",
+            "description": "创新驱动、用户至上、安全可靠、合作共赢"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "id": "0ea914af37fb41c386f9a328ff6b889f",
+    "template": "cta",
+    "title": "准备好开启医疗智能化之旅了吗？",
+    "description": "立即联系我们，获取专属解决方案 and 免费试用机会",
+    "buttons": [
+        {
+            "text": "立即咨询",
+            "link": "#contact",
+            "icon": "fas fa-phone-alt",
+            "class": "bg-white text-primary-600 hover:bg-gray-100 shadow-xl"
+        },
+        {
+            "text": "下载产品手册",
+            "link": "#products",
+            "icon": "fas fa-download",
+            "class": "bg-transparent text-white border-2 border-white/50 hover:bg-white/10"
+        }
+    ]
+}

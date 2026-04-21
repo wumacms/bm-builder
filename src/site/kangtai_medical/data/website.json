@@ -1,0 +1,236 @@
+{
+    "id": "6ba7b8109dad11d180b400c04fd430c8",
+    "name": "康泰医疗",
+    "navbar": {
+        "id": "ce1de30d671440b782efd0fd6b962a31",
+        "template": "navbar",
+        "brand": {
+            "name": "康泰医疗",
+            "logoIcon": "fas fa-heartbeat"
+        },
+        "menuItems": [
+            {
+                "text": "首页",
+                "link": "#block-45d7fc8bf845461eb4a006a66c2aac16"
+            },
+            {
+                "text": "关于我们",
+                "link": "#block-0a40dadd90324e238f0690954f925e97",
+                "submenu": [
+                    {
+                        "text": "公司简介",
+                        "link": "#block-0a40dadd90324e238f0690954f925e97",
+                        "icon": "fas fa-building"
+                    },
+                    {
+                        "text": "核心团队",
+                        "link": "#block-788b90f3ff8b48a3973238bb7d07352a",
+                        "icon": "fas fa-users"
+                    },
+                    {
+                        "text": "企业文化",
+                        "link": "#block-1dce2d41c12c4bd490ff75dc9e6bcbfe",
+                        "icon": "fas fa-landmark"
+                    }
+                ]
+            },
+            {
+                "text": "产品服务",
+                "link": "#block-7993f58f0c034d1c8b0be04cf7621987",
+                "submenu": [
+                    {
+                        "text": "影像传输系统",
+                        "link": "#block-7993f58f0c034d1c8b0be04cf7621987",
+                        "icon": "fas fa-microscope"
+                    },
+                    {
+                        "text": "临床工作流",
+                        "link": "#block-7993f58f0c034d1c8b0be04cf7621987",
+                        "icon": "fas fa-project-diagram"
+                    },
+                    {
+                        "text": "智能协作平台",
+                        "link": "#block-7993f58f0c034d1c8b0be04cf7621987",
+                        "icon": "fas fa-handshake"
+                    }
+                ]
+            },
+            {
+                "text": "新闻动态",
+                "link": "#block-652c196bae1a466d91bcbf2070c25f9c"
+            },
+            {
+                "text": "联系我们",
+                "link": "#block-73a963e387944f2cbc622e95eafec2c8"
+            }
+        ]
+    },
+    "mobile-menu": {
+        "id": "18219a2bb5564fb9b882012294328d9b",
+        "template": "mobile-menu",
+        "brand": {
+            "name": "康泰医疗",
+            "logoIcon": "fas fa-heartbeat"
+        },
+        "menuItems": [
+            {
+                "text": "首页",
+                "link": "#block-45d7fc8bf845461eb4a006a66c2aac16",
+                "icon": "fas fa-home"
+            },
+            {
+                "text": "关于我们",
+                "icon": "fas fa-info-circle",
+                "submenu": [
+                    {
+                        "text": "公司简介",
+                        "link": "#block-0a40dadd90324e238f0690954f925e97"
+                    },
+                    {
+                        "text": "核心团队",
+                        "link": "#block-788b90f3ff8b48a3973238bb7d07352a"
+                    },
+                    {
+                        "text": "企业文化",
+                        "link": "#block-1dce2d41c12c4bd490ff75dc9e6bcbfe"
+                    }
+                ]
+            },
+            {
+                "text": "产品服务",
+                "icon": "fas fa-cubes",
+                "submenu": [
+                    {
+                        "text": "影像传输系统",
+                        "link": "#block-7993f58f0c034d1c8b0be04cf7621987"
+                    },
+                    {
+                        "text": "临床工作流",
+                        "link": "#block-7993f58f0c034d1c8b0be04cf7621987"
+                    },
+                    {
+                        "text": "智能协作平台",
+                        "link": "#block-7993f58f0c034d1c8b0be04cf7621987"
+                    }
+                ]
+            },
+            {
+                "text": "新闻动态",
+                "link": "#block-652c196bae1a466d91bcbf2070c25f9c",
+                "icon": "fas fa-newspaper"
+            },
+            {
+                "text": "联系我们",
+                "link": "#block-73a963e387944f2cbc622e95eafec2c8",
+                "icon": "fas fa-envelope"
+            }
+        ],
+        "cta": {
+            "text": "免费咨询",
+            "link": "#block-73a963e387944f2cbc622e95eafec2c8"
+        }
+    },
+    "footer": {
+        "id": "3f434ac02aa246859ee5bce8d1c2ad40",
+        "template": "footer",
+        "company": {
+            "name": "康泰医疗",
+            "logoIcon": "fas fa-heartbeat",
+            "description": "专为现代医疗机构打造的智能协作平台，集成影像传输与临床工作流。",
+            "social": [
+                {
+                    "icon": "fab fa-weixin",
+                    "link": "#"
+                },
+                {
+                    "icon": "fab fa-weibo",
+                    "link": "#"
+                },
+                {
+                    "icon": "fab fa-linkedin-in",
+                    "link": "#"
+                }
+            ]
+        },
+        "sections": [
+            {
+                "title": "快速链接",
+                "links": [
+                    {
+                        "text": "首页",
+                        "link": "#block-45d7fc8bf845461eb4a006a66c2aac16"
+                    },
+                    {
+                        "text": "关于我们",
+                        "link": "#block-0a40dadd90324e238f0690954f925e97"
+                    },
+                    {
+                        "text": "产品服务",
+                        "link": "#block-7993f58f0c034d1c8b0be04cf7621987"
+                    },
+                    {
+                        "text": "新闻动态",
+                        "link": "#block-652c196bae1a466d91bcbf2070c25f9c"
+                    },
+                    {
+                        "text": "联系我们",
+                        "link": "#block-73a963e387944f2cbc622e95eafec2c8"
+                    }
+                ]
+            },
+            {
+                "title": "产品服务",
+                "links": [
+                    {
+                        "text": "影像传输系统",
+                        "link": "#block-7993f58f0c034d1c8b0be04cf7621987"
+                    },
+                    {
+                        "text": "临床工作流",
+                        "link": "#block-7993f58f0c034d1c8b0be04cf7621987"
+                    },
+                    {
+                        "text": "智能协作平台",
+                        "link": "#block-7993f58f0c034d1c8b0be04cf7621987"
+                    },
+                    {
+                        "text": "技术支持",
+                        "link": "#"
+                    }
+                ]
+            }
+        ],
+        "contact": {
+            "title": "联系我们",
+            "items": [
+                {
+                    "icon": "fas fa-phone-alt",
+                    "text": "400-888-9999"
+                },
+                {
+                    "icon": "fas fa-envelope",
+                    "text": "contact@kangtai-medical.com"
+                },
+                {
+                    "icon": "fas fa-map-marker-alt",
+                    "text": "北京市海淀区中关村科技园区8号楼"
+                }
+            ]
+        },
+        "copyright": "© 2024 康泰医疗科技有限公司. 保留所有权利.",
+        "footerLinks": [
+            {
+                "text": "隐私政策",
+                "link": "#"
+            },
+            {
+                "text": "服务条款",
+                "link": "#"
+            },
+            {
+                "text": "京ICP备12345678号",
+                "link": "#"
+            }
+        ]
+    }
+}

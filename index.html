@@ -5,21 +5,11 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>bm-builder</title>
-  <script>
-    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-      document.documentElement.style.colorScheme = 'dark';
-    } else {
-      document.documentElement.classList.remove('dark');
-      document.documentElement.style.colorScheme = 'light';
-    }
-  </script>
+  <title>建站平台</title>
 </head>
 
-<body class="font-sans bg-white text-slate-500 dark:bg-slate-900 dark:text-gray-400 text-base lg:text-lg leading-relaxed tracking-normal antialiased m-0">
-  <div id="app" class="w-full max-w-6xl mx-auto text-center border-x border-gray-200 dark:border-slate-800 min-h-screen flex flex-col">
+<body class="m-0 overflow-hidden">
+  <div id="app">
   </div>
   <script type="module" src="/src/main.ts"></script>
 </body>

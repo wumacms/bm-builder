@@ -1,0 +1,32 @@
+{
+    "id": "1dce2d41c12c4bd490ff75dc9e6bcbfe",
+    "template": "culture",
+    "badge": {
+        "icon": "fas fa-landmark",
+        "text": "企业文化"
+    },
+    "title": "我们的文化基因",
+    "items": [
+        {
+            "icon": "fas fa-lightbulb",
+            "iconColor": "text-primary-500",
+            "gradient": "from-primary-50 to-cyan-50 dark:from-primary-900/30 dark:to-cyan-900/30",
+            "title": "持续创新",
+            "description": "拥抱变化，不断探索医疗信息化的新可能，为行业带来突破性的解决方案。"
+        },
+        {
+            "icon": "fas fa-hands-helping",
+            "iconColor": "text-cyan-500",
+            "gradient": "from-cyan-50 to-blue-50 dark:from-cyan-900/30 dark:to-blue-900/30",
+            "title": "用户至上",
+            "description": "深入理解医疗机构需求，以用户体验为核心，打造真正解决问题的产品。"
+        },
+        {
+            "icon": "fas fa-shield-alt",
+            "iconColor": "text-purple-500",
+            "gradient": "from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30",
+            "title": "安全可靠",
+            "description": "医疗数据安全是我们的生命线，采用最高标准的安全措施保护患者隐私。"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+<!-- 页脚 -->
+<footer class="bg-gray-900 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+            <!-- 公司信息 -->
+            <div>
+                <div class="flex items-center space-x-3 mb-6">
+                    <div
+                        class="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-700 rounded-xl flex items-center justify-center">
+                        <i class="{{company.logoIcon}} text-white"></i>
+                    </div>
+                    <span class="text-xl font-bold">{{company.name}}</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-4">
+                    {{company.description}}
+                </p>
+                <div class="flex space-x-3">
+                    {{#each company.social}}
+                    <a href="{{link}}"
+                        class="w-9 h-9 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-primary-600 transition-colors">
+                        <i class="{{icon}} text-sm"></i>
+                    </a>
+                    {{/each}}
+                </div>
+            </div>
+
+            <!-- 动态渲染栏目 -->
+            {{#each sections}}
+            <div>
+                <h4 class="font-semibold mb-4">{{title}}</h4>
+                <ul class="space-y-3 text-sm text-gray-400">
+                    {{#each links}}
+                    <li><a href="{{link}}" class="hover:text-primary-400 transition-colors">{{text}}</a></li>
+                    {{/each}}
+                </ul>
+            </div>
+            {{/each}}
+
+            <!-- 联系方式 -->
+            <div>
+                <h4 class="font-semibold mb-4">{{contact.title}}</h4>
+                <ul class="space-y-3 text-sm text-gray-400">
+                    {{#each contact.items}}
+                    <li class="flex items-center">
+                        <i class="{{icon}} w-5 text-primary-500"></i>
+                        <span class="ml-2">{{text}}</span>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+
+        <!-- 底部版权 -->
+        <div
+            class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+            <p>{{copyright}}</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                {{#each footerLinks}}
+                <a href="{{link}}" class="hover:text-primary-400 transition-colors">{{text}}</a>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</footer>

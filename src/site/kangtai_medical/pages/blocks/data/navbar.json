@@ -1,0 +1,64 @@
+{
+    "id": "ce1de30d671440b782efd0fd6b962a31",
+    "template": "navbar",
+    "brand": {
+        "name": "康泰医疗",
+        "logoIcon": "fas fa-heartbeat"
+    },
+    "menuItems": [
+        {
+            "text": "首页",
+            "link": "#home"
+        },
+        {
+            "text": "关于我们",
+            "link": "#about",
+            "submenu": [
+                {
+                    "text": "公司简介",
+                    "link": "#about",
+                    "icon": "fas fa-building"
+                },
+                {
+                    "text": "核心团队",
+                    "link": "#team",
+                    "icon": "fas fa-users"
+                },
+                {
+                    "text": "企业文化",
+                    "link": "#culture",
+                    "icon": "fas fa-landmark"
+                }
+            ]
+        },
+        {
+            "text": "产品服务",
+            "link": "#products",
+            "submenu": [
+                {
+                    "text": "影像传输系统",
+                    "link": "#products",
+                    "icon": "fas fa-microscope"
+                },
+                {
+                    "text": "临床工作流",
+                    "link": "#workflow",
+                    "icon": "fas fa-project-diagram"
+                },
+                {
+                    "text": "智能协作平台",
+                    "link": "#collaboration",
+                    "icon": "fas fa-handshake"
+                }
+            ]
+        },
+        {
+            "text": "新闻动态",
+            "link": "#news"
+        },
+        {
+            "text": "联系我们",
+            "link": "#contact"
+        }
+    ]
+}
