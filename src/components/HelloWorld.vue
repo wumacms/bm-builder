@@ -3,8 +3,10 @@ import { ref } from 'vue'
 import viteLogo from '../assets/vite.svg'
 import heroImg from '../assets/hero.png'
 import vueLogo from '../assets/vue.svg'
+import { useTheme } from '../composables/useTheme'
 
 const count = ref(0)
+const { theme, toggleTheme } = useTheme()
 </script>
 
 <template>
@@ -18,8 +20,16 @@ const count = ref(0)
       <h1 class="font-medium text-4xl lg:text-6xl leading-tight tracking-tight my-5 lg:my-8 text-black dark:text-gray-100">开始使用</h1>
       <p class="m-0 text-slate-500 dark:text-gray-400">编辑 <code class="font-mono text-sm px-2 py-1 bg-stone-100 dark:bg-zinc-900 text-black dark:text-gray-100 rounded">src/App.vue</code> 并保存以测试 <code class="font-mono text-sm px-2 py-1 bg-stone-100 dark:bg-zinc-900 text-black dark:text-gray-100 rounded">HMR</code></p>
     </div>
-    <button class="font-mono inline-flex rounded text-base px-2.5 py-1.5 text-purple-600 dark:text-purple-400 bg-purple-600/10 dark:bg-purple-400/15 border-2 border-transparent hover:border-purple-600/50 dark:hover:border-purple-400/50 transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600 dark:focus-visible:outline-purple-400 mb-6" @click="count++">计数为 {{ count }}</button>
-    <button class="cursor-pointer transition-all duration-300 rounded-full hover:from-white dark:hover:from-zinc-800 dark:hover:to-zinc-700 hover:shadow-md flex items-center justify-center text-xl md:text-2xl p-2 group border-none bg-transparent" aria-label="切换暗黑模式" type="button" tabindex="0"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="text-amber-500 group-hover:text-amber-400 transition-colors duration-300" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M234 26h44v92h-44zm0 368h44v92h-44zm104.025-251.143 65.054-65.054 31.113 31.113-65.054 65.054zM77.815 403.074l65.054-65.054 31.113 31.113-65.054 65.054zM394 234h92v44h-92zm-368 0h92v44H26zm312.029 135.14 31.112-31.113 65.054 65.054-31.112 31.112zM77.802 108.92l31.113-31.113 65.054 65.054-31.113 31.112zM256 358a102 102 0 1 1 102-102 102.12 102.12 0 0 1-102 102z"></path></svg></button>
+    <div class="flex items-center gap-4 mb-6">
+      <button class="font-mono inline-flex rounded text-base px-2.5 py-1.5 text-purple-600 dark:text-purple-400 bg-purple-600/10 dark:bg-purple-400/15 border-2 border-transparent hover:border-purple-600/50 dark:hover:border-purple-400/50 transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600 dark:focus-visible:outline-purple-400" @click="count++">计数为 {{ count }}</button>
+      <button @click="toggleTheme" class="cursor-pointer transition-all duration-300 rounded-full hover:bg-black/5 dark:hover:bg-white/10 hover:shadow-sm flex items-center justify-center p-2 px-4 gap-2 group border border-gray-200 dark:border-slate-800 bg-white dark:bg-slate-900" aria-label="切换主题" type="button" tabindex="0">
+        <svg v-if="theme === 'light'" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-amber-500 group-hover:text-amber-600 transition-colors duration-300" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        <svg v-else stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-indigo-400 group-hover:text-indigo-300 transition-colors duration-300" xmlns="http://www.w3.org/2000/svg"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <span class="text-sm font-medium text-slate-600 dark:text-gray-300 w-12 text-center">
+          {{ theme === 'light' ? '浅色' : '深色' }}
+        </span>
+      </button>
+    </div>
   </section>
 
   <div class="relative w-full before:content-[''] before:absolute before:-top-1 before:border-4 before:border-transparent before:left-0 before:border-l-gray-200 dark:before:border-l-slate-800 after:content-[''] after:absolute after:-top-1 after:border-4 after:border-transparent after:right-0 after:border-r-gray-200 dark:after:border-r-slate-800"></div>
