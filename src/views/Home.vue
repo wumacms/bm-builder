@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { supabase } from '../lib/supabase'
-import KangtaiMedical from '../components/KangtaiMedical.vue'
+import SitePreview from '../components/SitePreview.vue'
 
 const router = useRouter()
 const loggingOut = ref(false)
@@ -58,7 +58,7 @@ const handleLogout = async () => {
 
     <!-- 主内容区 -->
     <main class="flex-1 w-full relative overflow-hidden">
-      <KangtaiMedical />
+      <SitePreview />
     </main>
   </div>
 </template>

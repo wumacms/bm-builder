@@ -2,27 +2,16 @@
 import { ref, onMounted, watch } from 'vue';
 import Handlebars from 'handlebars';
 
-/** 
- * 数据导入
- */
-import websiteData from '../site/kangtai_medical/data/website.json';
-import pagesData from '../site/kangtai_medical/data/pages.json';
-
-// 导入主模板
-import indexTemplate from '../site/kangtai_medical/data/index.html?raw';
-
-// 导入全局样式 (使用 ?inline 获取 CSS 字符串)
+// 全局样式 (组件级依赖，保留在此处)
 import globalCss from '../style.css?inline';
 
 /**
- * 优化 1: 修复 Vite 弃用警告
- * 使用 query: '?raw' 代替 as: 'raw'
+ * API 层：所有数据获取均通过 API 模块完成
+ * 组件无需感知具体的文件路径或 Vite 特性
  */
-const rawTemplates = import.meta.glob('../site/kangtai_medical/pages/blocks/template/*.html', { 
-    query: '?raw', 
-    import: 'default',
-    eager: true 
-});
+import { getSiteResources } from '../api/site';
+
+const { websiteData, homePage, indexTemplate, blockTemplates } = getSiteResources();
 
 const renderedHtml = ref('');
 
@@ -79,10 +68,10 @@ const renderSite = (website, page, mainTpl, blockTemplates, css) => {
 // 封装更新函数
 const updatePreview = () => {
     renderedHtml.value = renderSite(
-        websiteData, 
-        pagesData[0], // 默认首页
-        indexTemplate, 
-        rawTemplates,
+        websiteData,
+        homePage,
+        indexTemplate,
+        blockTemplates,
         globalCss
     );
 };
@@ -93,7 +82,7 @@ onMounted(updatePreview);
  * 优化 3: 实时预览响应式
  * 深度监听数据变化，只要 JSON 修改，预览立即更新
  */
-watch([() => websiteData, () => pagesData], updatePreview, { deep: true });
+watch([() => websiteData, () => homePage], updatePreview, { deep: true });
 
 </script>
 
