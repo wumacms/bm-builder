@@ -71,9 +71,12 @@ const handleRegister = async () => {
           <input 
             v-model="email"
             type="email" 
+            name="email"
+            autocomplete="username"
             required
+            :disabled="loading"
             placeholder="name@example.com"
-            class="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-xl text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all"
+            class="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-xl text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
           />
         </div>
 
@@ -83,14 +86,18 @@ const handleRegister = async () => {
             <input 
               v-model="password"
               :type="showPassword ? 'text' : 'password'" 
+              name="password"
+              autocomplete="new-password"
               required
+              :disabled="loading"
               placeholder="8位以上，含大小写字母、数字和符号"
-              class="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-xl text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all pr-12"
+              class="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-xl text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all pr-12 disabled:opacity-50 disabled:cursor-not-allowed"
             />
             <button 
               type="button"
               @click="showPassword = !showPassword"
-              class="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-zinc-300 p-1 transition-colors"
+              :disabled="loading"
+              class="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-zinc-300 p-1 transition-colors disabled:opacity-50"
             >
               <svg v-if="!showPassword" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -109,15 +116,19 @@ const handleRegister = async () => {
             <input 
               v-model="confirmPassword"
               :type="showConfirmPassword ? 'text' : 'password'" 
+              name="confirmPassword"
+              autocomplete="new-password"
               required
+              :disabled="loading"
               placeholder="请再次输入密码"
-              class="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-xl text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all pr-12"
+              class="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-xl text-white placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-primary-500 transition-all pr-12 disabled:opacity-50 disabled:cursor-not-allowed"
               :class="{'border-red-500/50 focus:ring-red-500': confirmPassword && password !== confirmPassword}"
             />
             <button 
               type="button"
               @click="showConfirmPassword = !showConfirmPassword"
-              class="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-zinc-300 p-1 transition-colors"
+              :disabled="loading"
+              class="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-zinc-300 p-1 transition-colors disabled:opacity-50"
             >
               <svg v-if="!showConfirmPassword" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />

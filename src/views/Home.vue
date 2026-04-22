@@ -1,12 +1,16 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { supabase } from '../lib/supabase'
 import KangtaiMedical from '../components/KangtaiMedical.vue'
 
 const router = useRouter()
+const loggingOut = ref(false)
 
 const handleLogout = async () => {
+  if (loggingOut.value) return
   try {
+    loggingOut.value = true
     // 尝试调用 Supabase 登出接口
     await supabase.auth.signOut()
   } catch (error) {
@@ -35,7 +39,8 @@ const handleLogout = async () => {
       <div class="flex items-center gap-3">
         <button 
           @click="handleLogout"
-          class="flex items-center gap-1.5 px-3 py-1.5 bg-white/5 hover:bg-white/10 border border-white/10 rounded-md text-white/70 hover:text-white transition-all duration-200 group active:scale-95"
+          :disabled="loggingOut"
+          class="flex items-center gap-1.5 px-3 py-1.5 bg-white/5 hover:bg-white/10 border border-white/10 rounded-md text-white/70 hover:text-white transition-all duration-200 group active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <span class="text-xs font-medium">退出登录</span>
           <svg 
