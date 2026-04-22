@@ -48,6 +48,9 @@ jobs:
 
       - name: 执行项目构建
         run: pnpm run build
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
 
       - name: 配置 GitHub Pages 环境
         uses: actions/configure-pages@v5
