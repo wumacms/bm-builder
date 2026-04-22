@@ -3,6 +3,11 @@ import { ElLoading } from 'element-plus'
 let loadingInstance: ReturnType<typeof ElLoading.service> | null = null
 let requestCount = 0
 
+// 暴露给控制台进行调试：window.__LOADING_COUNT__
+if (typeof window !== 'undefined') {
+  (window as any).__LOADING_COUNT__ = () => requestCount
+}
+
 /**
  * 开启全局 Loading
  */
@@ -23,9 +28,10 @@ export const startLoading = (text: string = '加载中...') => {
  * 关闭全局 Loading
  */
 export const endLoading = () => {
+  if (requestCount <= 0) return
+  
   requestCount--
-  if (requestCount <= 0) {
-    requestCount = 0 // 容错处理
+  if (requestCount === 0) {
     loadingInstance?.close()
     loadingInstance = null
   }
