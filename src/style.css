@@ -17,3 +17,7 @@
   --font-sans: "Inter", "system-ui", "sans-serif";
 }
 
+:root, .dark {
+  /* 强制同步 Element Plus 的主色调与网站主题色 (#06b6d4) */
+  --el-color-primary: #06b6d4 !important;
+}
