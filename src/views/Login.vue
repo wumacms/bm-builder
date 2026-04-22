@@ -42,9 +42,9 @@ const handleLogin = async () => {
 
       <form @submit.prevent="handleLogin" class="space-y-4">
         <div>
-          <label class="block text-sm font-medium text-zinc-300 mb-1.5">电子邮箱</label>
+          <label for="email" class="block text-sm font-medium text-zinc-300 mb-1.5">电子邮箱</label>
           <input 
-            v-model="email"
+            id="email"
             type="email" 
             name="email"
             autocomplete="username"
@@ -56,10 +56,10 @@ const handleLogin = async () => {
         </div>
 
         <div>
-          <label class="block text-sm font-medium text-zinc-300 mb-1.5">密码</label>
+          <label for="password" class="block text-sm font-medium text-zinc-300 mb-1.5">密码</label>
           <div class="relative">
             <input 
-              v-model="password"
+              id="password"
               :type="showPassword ? 'text' : 'password'" 
               name="password"
               autocomplete="current-password"

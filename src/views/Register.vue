@@ -67,9 +67,9 @@ const handleRegister = async () => {
 
       <form @submit.prevent="handleRegister" class="space-y-4">
         <div>
-          <label class="block text-sm font-medium text-zinc-300 mb-1.5">电子邮箱</label>
+          <label for="email" class="block text-sm font-medium text-zinc-300 mb-1.5">电子邮箱</label>
           <input 
-            v-model="email"
+            id="email"
             type="email" 
             name="email"
             autocomplete="username"
@@ -81,10 +81,10 @@ const handleRegister = async () => {
         </div>
 
         <div>
-          <label class="block text-sm font-medium text-zinc-300 mb-1.5">设置密码</label>
+          <label for="password" class="block text-sm font-medium text-zinc-300 mb-1.5">设置密码</label>
           <div class="relative">
             <input 
-              v-model="password"
+              id="password"
               :type="showPassword ? 'text' : 'password'" 
               name="password"
               autocomplete="new-password"
@@ -111,10 +111,10 @@ const handleRegister = async () => {
         </div>
 
         <div>
-          <label class="block text-sm font-medium text-zinc-300 mb-1.5">确认密码</label>
+          <label for="confirmPassword" class="block text-sm font-medium text-zinc-300 mb-1.5">确认密码</label>
           <div class="relative">
             <input 
-              v-model="confirmPassword"
+              id="confirmPassword"
               :type="showConfirmPassword ? 'text' : 'password'" 
               name="confirmPassword"
               autocomplete="new-password"
