@@ -1,6 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import { supabase } from '../lib/supabase'
-import { startLoading, endLoading } from '../utils/loading'
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
