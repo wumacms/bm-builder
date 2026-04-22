@@ -45,6 +45,7 @@ const handleLogin = async () => {
           <label for="email" class="block text-sm font-medium text-zinc-300 mb-1.5">电子邮箱</label>
           <input 
             id="email"
+            v-model="email"
             type="email" 
             name="email"
             autocomplete="username"
@@ -60,6 +61,7 @@ const handleLogin = async () => {
           <div class="relative">
             <input 
               id="password"
+              v-model="password"
               :type="showPassword ? 'text' : 'password'" 
               name="password"
               autocomplete="current-password"
