@@ -9,10 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.104.0",
     "@tailwindcss/vite": "^4.2.3",
     "handlebars": "^4.7.9",
     "tailwindcss": "^4.2.3",
-    "vue": "^3.5.32"
+    "vue": "^3.5.32",
+    "vue-router": "^5.0.4"
   },
   "devDependencies": {
     "@types/node": "^24.12.2",

@@ -98,7 +98,7 @@ watch([() => websiteData, () => pagesData], updatePreview, { deep: true });
 </script>
 
 <template>
-    <div class="render-container w-full h-screen overflow-hidden bg-gray-50 dark:bg-gray-900">
+    <div class="render-container w-full h-full overflow-hidden bg-gray-50 dark:bg-gray-900">
         <!-- Iframe 提供完美的样式和脚本隔离 -->
         <iframe 
             v-if="renderedHtml"
