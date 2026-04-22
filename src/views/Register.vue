@@ -25,9 +25,10 @@ const handleRegister = async () => {
       throw new Error('密码长度至少需要 8 位')
     }
     
-    const complexityRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&_#\.\-\^])[A-Za-z\d@$!%*?&_#\.\-\^]/
+    // 复杂度校验：包含大小写字母、数字和符号，且长度至少 8 位
+    const complexityRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&_#\.\-\^])[A-Za-z\d@$!%*?&_#\.\-\^]{8,}$/
     if (!complexityRegex.test(password.value)) {
-      throw new Error('密码必须包含大写字母、小写字母、数字和特殊字符')
+      throw new Error('密码必须包含大写字母、小写字母、数字和特殊字符，且长度至少 8 位')
     }
     
     if (password.value !== confirmPassword.value) {
@@ -70,6 +71,7 @@ const handleRegister = async () => {
           <label for="email" class="block text-sm font-medium text-zinc-300 mb-1.5">电子邮箱</label>
           <input 
             id="email"
+            v-model="email"
             type="email" 
             name="email"
             autocomplete="username"
@@ -85,6 +87,7 @@ const handleRegister = async () => {
           <div class="relative">
             <input 
               id="password"
+              v-model="password"
               :type="showPassword ? 'text' : 'password'" 
               name="password"
               autocomplete="new-password"
@@ -115,6 +118,7 @@ const handleRegister = async () => {
           <div class="relative">
             <input 
               id="confirmPassword"
+              v-model="confirmPassword"
               :type="showConfirmPassword ? 'text' : 'password'" 
               name="confirmPassword"
               autocomplete="new-password"
